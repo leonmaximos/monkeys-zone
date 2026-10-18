@@ -1,0 +1,17 @@
+.env
+.env.*
+!.env.example
+/target/
+node_modules/
+dist/
+coverage/
+*.tsbuildinfo
+/data/
+*.db
+*.db-shm
+*.db-wal
+*.sqlite
+*.sqlite-shm
+*.sqlite-wal
+playwright-report/
+test-results/

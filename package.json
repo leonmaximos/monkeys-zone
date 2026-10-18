@@ -1,0 +1,26 @@
+{
+  "name": "discord-mvp",
+  "version": "0.1.0",
+  "private": true,
+  "workspaces": [
+    "apps/frontend"
+  ],
+  "engines": {
+    "node": "^22.13.0 || ^24.0.0 || >=26.0.0",
+    "npm": ">=10"
+  },
+  "scripts": {
+    "dev": "npm run dev --workspace @discord/frontend",
+    "build": "npm run build --workspace @discord/frontend",
+    "preview": "npm run preview --workspace @discord/frontend",
+    "lint": "npm run lint --workspace @discord/frontend",
+    "test": "npm run test --workspace @discord/frontend",
+    "format": "prettier . --write",
+    "format:check": "prettier . --check",
+    "test:e2e": "tsc -p tsconfig.e2e.json && playwright test"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.64.1",
+    "prettier": "^3.6.2"
+  }
+}

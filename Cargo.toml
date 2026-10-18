@@ -1,0 +1,11 @@
+[workspace]
+members = ["apps/backend"]
+resolver = "3"
+
+[workspace.package]
+edition = "2024"
+publish = false
+
+[workspace.lints.clippy]
+unwrap_used = "deny"
+expect_used = "deny"

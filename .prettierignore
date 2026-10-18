@@ -1,0 +1,11 @@
+target/
+node_modules/
+dist/
+coverage/
+data/
+test-results/
+playwright-report/
+Cargo.lock
+.env
+.env.*
+!.env.example
